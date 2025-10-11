@@ -25,6 +25,10 @@ jobs:
           ls -la events.en-GB.ics || echo "Error: events.en-GB.ics not found"
           pwd
           ls -la
+      - name: Ensure ICS file is readable
+        run: |
+          chmod +r events.en-GB.ics
+          ls -la events.en-GB.ics
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
