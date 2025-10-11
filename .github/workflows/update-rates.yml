@@ -53,8 +53,6 @@ jobs:
           python main.py
           ls -la public/
           grep "<h1>Electricity Rates" public/index.html
-          head -n 20 public/index.html
-          tail -n 20 public/index.html
       - name: Commit and push generated files
         run: |
           git config --global user.name "GitHub Actions"
