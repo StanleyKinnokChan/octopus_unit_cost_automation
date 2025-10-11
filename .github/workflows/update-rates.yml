@@ -40,9 +40,9 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git pull --rebase origin main  # Fetch and rebase to avoid conflicts
           git add public/index.html
           git commit -m "Update daily electricity rates" || echo "No changes to commit"
+          git pull --rebase origin main --strategy-option=theirs  # Use 'theirs' to prefer remote changes in conflicts
           git push
       - name: Set up Node.js
         uses: actions/setup-node@v4
