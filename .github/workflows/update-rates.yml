@@ -51,8 +51,6 @@ jobs:
           OCTOPUS_TARIFF_CODE: ${{ secrets.OCTOPUS_TARIFF_CODE }}
         run: |
           python main.py
-          ls -la public/
-          grep "<h1>Electricity Rates" public/index.html
       - name: Commit and push generated files
         run: |
           git config --global user.name "GitHub Actions"
