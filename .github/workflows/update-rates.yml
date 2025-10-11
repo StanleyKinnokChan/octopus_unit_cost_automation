@@ -19,12 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch full history to avoid shallow clone issues
+          fetch-depth: 0
       - name: Verify ICS file presence
-          run: |
-            ls -la events.en-GB.ics || echo "Error: events.en-GB.ics not found"
-            pwd
-            ls -la
+        run: |
+          ls -la events.en-GB.ics || echo "Error: events.en-GB.ics not found"
+          pwd
+          ls -la
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
