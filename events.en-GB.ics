@@ -1,0 +1,171 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:Data::ICal 0.24
+X-PUBLISHED-TTL:1440
+X-WR-CALDESC:Solid Waste
+X-WR-CALNAME:19 Stirling Grove\, Nottingham\, NG11 9AQ
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20250929
+SUMMARY:General waste
+UID:2025-09-29-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garden* and recycling
+DTSTART;VALUE=DATE:20251006
+SUMMARY:Garden* and recycling
+UID:2025-10-06-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20251013
+SUMMARY:General waste
+UID:2025-10-13-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garden* and recycling
+DTSTART;VALUE=DATE:20251020
+SUMMARY:Garden* and recycling
+UID:2025-10-20-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20251027
+SUMMARY:General waste
+UID:2025-10-27-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garden* and recycling
+DTSTART;VALUE=DATE:20251103
+SUMMARY:Garden* and recycling
+UID:2025-11-03-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20251110
+SUMMARY:General waste
+UID:2025-11-10-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20251117
+SUMMARY:Recycling
+UID:2025-11-17-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20251124
+SUMMARY:General waste
+UID:2025-11-24-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garden* and recycling
+DTSTART;VALUE=DATE:20251201
+SUMMARY:Garden* and recycling
+UID:2025-12-01-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20251208
+SUMMARY:General waste
+UID:2025-12-08-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20251215
+SUMMARY:Recycling
+UID:2025-12-15-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20251220
+SUMMARY:General waste
+UID:2025-12-20-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20251229
+SUMMARY:Recycling
+UID:2025-12-29-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260105
+SUMMARY:General waste
+UID:2026-01-05-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20260112
+SUMMARY:Recycling
+UID:2026-01-12-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260119
+SUMMARY:General waste
+UID:2026-01-19-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20260126
+SUMMARY:Recycling
+UID:2026-01-26-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260202
+SUMMARY:General waste
+UID:2026-02-02-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20260209
+SUMMARY:Recycling
+UID:2026-02-09-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260216
+SUMMARY:General waste
+UID:2026-02-16-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20260223
+SUMMARY:Recycling
+UID:2026-02-23-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260302
+SUMMARY:General waste
+UID:2026-03-02-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20260309
+SUMMARY:Recycling
+UID:2026-03-09-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260316
+SUMMARY:General waste
+UID:2026-03-16-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Recycling
+DTSTART;VALUE=DATE:20260323
+SUMMARY:Recycling
+UID:2026-03-23-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:General waste
+DTSTART;VALUE=DATE:20260330
+SUMMARY:General waste
+UID:2026-03-30-NottinghamCityCoun-waste-@recollect.net
+END:VEVENT
+END:VCALENDAR
