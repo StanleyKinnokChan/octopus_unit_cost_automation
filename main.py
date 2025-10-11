@@ -90,14 +90,14 @@ html = """
         body {{ font-family: Arial, sans-serif; margin: 10px; padding: 0; }}
         h1 {{ text-align: center; font-size: 1.5em; margin: 10px 0; }}
         p {{ text-align: center; font-size: 0.9em; margin: 5px 0; }}
-        .table-container {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 100%; }}
-        table {{ border-collapse: collapse; width: 100%; max-width: 300px; }}
-        th, td {{ border: 1px solid #ddd; padding: 4px; text-align: center; font-size: 0.85em; }}
+        .table-container {{ display: flex; flex-direction: row; justify-content: center; gap: 8px; max-width: 100%; }}
+        table {{ border-collapse: collapse; width: 48%; max-width: 250px; flex: 1; }}
+        th, td {{ border: 1px solid #ddd; padding: 3px; text-align: center; font-size: 0.8em; }}
         th {{ background-color: #f2f2f2; }}
         tr:nth-child(even) {{ background-color: #f9f9f9; }}
-        @media (max-width: 600px) {{
+        @media (max-width: 400px) {{
             .table-container {{ flex-direction: column; align-items: center; }}
-            table {{ max-width: 100%; }}
+            table {{ width: 100%; max-width: 100%; }}
         }}
     </style>
 </head>

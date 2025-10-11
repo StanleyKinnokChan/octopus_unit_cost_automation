@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '5 0 * * *'  # Runs daily at 00:05 UTC
   workflow_dispatch:  # Allows manual trigger
+  push:
+    branches:
+      - main
+    # Only trigger on pushes not made by GitHub Actions bot
+    if: github.actor != 'github-actions[bot]'
 
 permissions:
   contents: write  # Allow pushes
@@ -35,14 +40,19 @@ jobs:
           OCTOPUS_API_KEY: ${{ secrets.OCTOPUS_API_KEY }}
           OCTOPUS_PRODUCT_CODE: ${{ secrets.OCTOPUS_PRODUCT_CODE }}
           OCTOPUS_TARIFF_CODE: ${{ secrets.OCTOPUS_TARIFF_CODE }}
-        run: python main.py
+        run: |
+          python main.py
+          ls -la public/
+          grep "<h1>Electricity Rates" public/index.html
+          head -n 20 public/index.html
+          tail -n 20 public/index.html
       - name: Commit and push generated files
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add public/index.html
           git commit -m "Update daily electricity rates" || echo "No changes to commit"
-          git pull --rebase origin main --strategy-option=theirs  # Use 'theirs' to prefer remote changes in conflicts
+          git pull --rebase origin main --strategy-option=theirs
           git push
       - name: Set up Node.js
         uses: actions/setup-node@v4
