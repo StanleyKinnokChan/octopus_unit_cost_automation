@@ -16,6 +16,15 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install requests python-dotenv pytz
+      - name: Debug environment variables
+        env:
+          OCTOPUS_API_KEY: ${{ secrets.OCTOPUS_API_KEY }}
+          OCTOPUS_PRODUCT_CODE: ${{ secrets.OCTOPUS_PRODUCT_CODE }}
+          OCTOPUS_TARIFF_CODE: ${{ secrets.OCTOPUS_TARIFF_CODE }}
+        run: |
+          echo "OCTOPUS_PRODUCT_CODE is set: $OCTOPUS_PRODUCT_CODE"
+          echo "OCTOPUS_TARIFF_CODE is set: $OCTOPUS_TARIFF_CODE"
+          echo "OCTOPUS_API_KEY is set: (hidden for security)"
       - name: Fetch rates and generate HTML
         env:
           OCTOPUS_API_KEY: ${{ secrets.OCTOPUS_API_KEY }}
