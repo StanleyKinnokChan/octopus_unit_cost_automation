@@ -51,11 +51,8 @@ OCTOPUS_TARIFF_CODE=your_tariff_code    # e.g., E-1R-AGILE-FIXED-11M
 ### ICS File
 
 Download from your local council website (e.g., Nottingham City Council):
+https://www.nottinghamcity.gov.uk/information-for-residents/bin-and-rubbish-collections/check-my-bin-collection-day/
 
-```bash
-curl -o events.en-GB.ics https://www.nottinghamcity.gov.uk/.../check-my-bin-collection-day/
-git add events.en-GB.ics && git commit -m "Add bin collection ICS" && git push
-```
 
 ---
 
