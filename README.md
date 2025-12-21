@@ -6,11 +6,11 @@ This project generates a **static HTML dashboard** showing **daily electricity r
 
 ## Features
 
-* **Electricity Rates:** Fetches half-hourly rates for the current day in BST (00:00–23:30) and displays them in two side-by-side tables (24 rows each) for tablet-friendly viewing.
-* **Bin Collection Info:** Parses `events.en-GB.ics` to display the next bin collection date and type (e.g., *"13 Oct 2025 (Mon) — General waste"*).
-* **Responsive Design:** Tables stay side-by-side on tablets (768px) and stack on phones (<400px).
-* **Automated Updates:** Runs daily at **00:05 UTC** via GitHub Actions, also supports manual triggers.
-* **Static Deployment:** Deploys automatically to **Vercel**.
+*   **Electricity Rates:** Fetches half-hourly rates for the next day in BST (00:00–23:30) and displays them in two side-by-side tables (24 rows each) for tablet-friendly viewing.
+*   **Bin Collection Info:** Parses `events.en-GB.ics` to display the next bin collection date and type (e.g., *"13 Oct 2025 (Mon) — General waste"*).
+*   **Responsive Design:** Tables stay side-by-side on tablets (768px) and stack on phones (<400px).
+*   **Automated Updates:** Runs daily at **22:00 UTC (10:00 PM)** via GitHub Actions to fetch tomorrow's rates, avoiding queue delays.
+*   **Static Deployment:** Deploys automatically to **Vercel**.
 
 ---
 
@@ -75,7 +75,7 @@ Generates `public/index.html`. Open it in a browser to verify:
 
 **Triggers:**
 
-* Daily (cron: `5 0 * * *`)
+* Daily (cron: `0 22 * * *` - 22:00 UTC / 10:00 PM)
 * Manual push (excluding bot commits)
 * Manual trigger via `workflow_dispatch`
 
@@ -150,4 +150,4 @@ Generates `public/index.html`. Open it in a browser to verify:
 MIT License
 
 **Deployed at:** [octopus-unit-cost-automation.vercel.app](https://octopus-unit-cost-automation.vercel.app)
-**Updates:** Generated daily at 00:05 UTC
+**Updates:** Generated daily at 22:00 UTC (10:00 PM) for next day's rates

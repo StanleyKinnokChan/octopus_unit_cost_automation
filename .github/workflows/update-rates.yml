@@ -2,7 +2,7 @@ name: Update Electricity Rates and Deploy
 
 on:
   schedule:
-    - cron: '5 0 * * *'  # Runs daily at 00:05 UTC
+    - cron: '0 22 * * *'  # Runs daily at 22:00 UTC (10:00 PM) to fetch next day's rates
   workflow_dispatch:  # Allows manual trigger
   push:
     branches:
