@@ -172,6 +172,7 @@ for rate in second_half:
 html += f"""</table></div>
 <p class='bin-info'>🚮Next Bin Collection 下次收垃圾:</p>
 <p class='bin-info'>{bin_date_str} {bin_waste_display}</p>
+<p class='bin-info'>ics file required updating after 2026-12-14</p>
 </body>
 </html>"""
 

@@ -52,7 +52,7 @@ OCTOPUS_TARIFF_CODE=your_tariff_code    # e.g., E-1R-AGILE-FIXED-11M
 
 Download from your local council website (e.g., Nottingham City Council):
 https://www.nottinghamcity.gov.uk/information-for-residents/bin-and-rubbish-collections/check-my-bin-collection-day/
-
+Get a calendar -> Add to google calendar -> open the link and download the file
 
 ---
 
